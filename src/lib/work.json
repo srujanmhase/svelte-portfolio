@@ -1,0 +1,38 @@
+[
+    {
+        "img": "\\work\\fintex_mockup.webp",
+        "title": "Fintex - Concept Fintech App",
+        "href": "https://github.com",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    },
+    {
+        "img": "\\work\\beacon_mockup.webp",
+        "title": "Beacon - Location Tracking & Sharing App",
+        "href": "https://github.com",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    },
+    {
+        "img": "\\work\\swipe_to_complete_mockup.webp",
+        "title": "Swipe to complete - Open source package",
+        "href": "https://pub.dev",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    },
+    {
+        "img": "\\work\\reward_popup_mockup.webp",
+        "title": "Swipe to complete - Open source package",
+        "href": "https://pub.dev",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    },
+    {
+        "img": "\\work\\react_popup_mockup.webp",
+        "title": "Swipe to complete - Open source package",
+        "href": "https://pub.dev",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    },
+    {
+        "img": "\\work\\swipe_to_go_back_mockup.webp",
+        "title": "Swipe to complete - Open source package",
+        "href": "https://pub.dev",
+        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+    }
+]
