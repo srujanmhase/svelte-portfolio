@@ -1,12 +1,3 @@
-<script>
-	import mixpanel from 'mixpanel-browser';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		mixpanel.track('Endorsments');
-	});
-</script>
-
 <div class="endorsments">
 	<div class="endorsment-card">
 		<div class="endorsment-header">

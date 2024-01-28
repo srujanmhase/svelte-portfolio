@@ -1,12 +1,3 @@
-<script>
-	import mixpanel from 'mixpanel-browser';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		mixpanel.track('Home');
-	});
-</script>
-
 <div class="content">
 	<b>Intro:</b>
 	<span class="paragraph">

@@ -7,6 +7,7 @@
 		endorsmentPadding,
 		contactPadding
 	} from '$lib/stores/current_page';
+	import { onMount } from 'svelte';
 
 	const baseTitle = 'Srujan Mhase | Portfolio - Flutter developer';
 
@@ -29,22 +30,24 @@
 
 	let shouldAnimate = true;
 
-	/**
-	 * @param {MediaQueryList} x
-	 */
-	function resetWidth(x) {
-		if (x.matches) {
-			shouldAnimate = false;
-		} else {
-			shouldAnimate = true;
+	onMount(() => {
+		/**
+		 * @param {MediaQueryList} x
+		 */
+		function resetWidth(x) {
+			if (x.matches) {
+				shouldAnimate = false;
+			} else {
+				shouldAnimate = true;
+			}
 		}
-	}
-	var x = window.matchMedia('(max-width: 700px)');
+		const x = window.matchMedia('(max-width: 700px)');
 
-	resetWidth(x);
-
-	x.addEventListener('change', function () {
 		resetWidth(x);
+
+		x.addEventListener('change', function () {
+			resetWidth(x);
+		});
 	});
 </script>
 
@@ -62,6 +65,9 @@
 	>
 		hi, i'm srujan.
 	</a>
+	{#if !shouldAnimate}
+		<br />
+	{/if}
 	<a
 		href="/work"
 		style="margin-right: {shouldAnimate ? $workPadding : 0}px"
@@ -69,6 +75,9 @@
 	>
 		/work
 	</a>
+	{#if !shouldAnimate}
+		<br />
+	{/if}
 	<a
 		href="/endorsments"
 		style="margin-right: {shouldAnimate ? $endorsmentPadding : 0}px"
@@ -76,6 +85,9 @@
 	>
 		/endorsements
 	</a>
+	{#if !shouldAnimate}
+		<br />
+	{/if}
 	<a
 		href="/contact"
 		style="margin-right: {shouldAnimate ? $contactPadding : 0}px"
