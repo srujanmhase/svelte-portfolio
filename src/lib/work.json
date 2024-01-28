@@ -2,37 +2,37 @@
     {
         "img": "\\work\\fintex_mockup.webp",
         "title": "Fintex - Concept Fintech App",
-        "href": "https://github.com",
-        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
-    },
-    {
-        "img": "\\work\\beacon_mockup.webp",
-        "title": "Beacon - Location Tracking & Sharing App",
-        "href": "https://github.com",
+        "href": "https://youtube.com/shorts/IXn_tirNQsk",
         "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
     },
     {
         "img": "\\work\\swipe_to_complete_mockup.webp",
         "title": "Swipe to complete - Open source package",
-        "href": "https://pub.dev",
-        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+        "href": "https://pub.dev/packages/swipe_to_complete",
+        "description": "This package imnplements a UI/UX concept of a widget that enables a user to swipe across the screen in a designated area to confirm a selection, post which a callback will be executed."
     },
     {
         "img": "\\work\\reward_popup_mockup.webp",
-        "title": "Swipe to complete - Open source package",
-        "href": "https://pub.dev",
-        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+        "title": "Reward Popup - Open source package",
+        "href": "https://pub.dev/packages/reward_popup",
+        "description": "A flutter package to easily implement an attractive animated pop-up animation with gift and confetti animation."
     },
     {
         "img": "\\work\\react_popup_mockup.webp",
-        "title": "Swipe to complete - Open source package",
-        "href": "https://pub.dev",
-        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+        "title": "Reactions Menu - Open source package",
+        "href": "https://pub.dev/packages/react_popup",
+        "description": "A highly customizable flutter package that helps you to easily implement actions - reactions overlay pop-up."
     },
     {
         "img": "\\work\\swipe_to_go_back_mockup.webp",
-        "title": "Swipe to complete - Open source package",
-        "href": "https://pub.dev",
-        "description": "Fintex: A Concept Fintech App with Flutter. This is a demonstrator project where animated user interactions are implemented with proper state management."
+        "title": "Swipe to go back - Open source package",
+        "href": "https://pub.dev/packages/swipe_to_back",
+        "description": "A simple to use flutter package that helps you to implement swipe up or down to go back exactly like twitter."
+    },
+    {
+        "img": "\\work\\beacon_mockup.webp",
+        "title": "Beacon - Location Tracking & Sharing App",
+        "href": "https://github.com/srujanmhase/beacon-flutter",
+        "description": "Flutter app using Azure Maps for real-time location tracking. Users set sharing duration, initiate tracking, receive unique session ID (\"BCode\") that can be shared"
     }
 ]

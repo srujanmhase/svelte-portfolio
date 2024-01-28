@@ -58,6 +58,13 @@
 </div>
 
 <style>
+	.bg-star {
+		position: fixed;
+		bottom: -80px;
+		right: 200px;
+		z-index: -1;
+	}
+
 	.body {
 		position: fixed;
 		width: 100%;
@@ -102,13 +109,6 @@
 		right: 20px;
 	}
 
-	.bg-star {
-		position: fixed;
-		bottom: -80px;
-		right: 200px;
-		z-index: -1;
-	}
-
 	.pointer {
 		position: fixed;
 		background-color: white;
@@ -144,5 +144,19 @@
 		background: #5b68df;
 		filter: blur(250px);
 		z-index: -3;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.bg-star {
+			position: fixed;
+			bottom: -150px;
+			right: 200px;
+			z-index: -1;
+		}
+
+		.navbar {
+			padding-top: 20px;
+			padding-right: 50px;
+		}
 	}
 </style>

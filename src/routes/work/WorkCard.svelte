@@ -17,7 +17,7 @@
 	.work-card {
 		height: 50vh;
 		width: 450px;
-		background: rgba(255, 255, 255, 0.17);
+		background: rgba(87, 87, 87, 0.653);
 		border: 1px solid white;
 		margin-right: 30px;
 		flex-shrink: 0;

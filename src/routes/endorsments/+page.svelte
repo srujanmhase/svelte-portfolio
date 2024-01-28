@@ -1,7 +1,7 @@
 <div class="endorsments">
 	<div class="endorsment-card">
 		<div class="endorsment-header">
-			<div style="height: 50px; width:50px; border-radius:100px; background-color: white"></div>
+			<div style="height: 50px; width:50px; border-radius:100%; background-color: white"></div>
 			<div style="margin-left: 16px;">
 				<h4 style="margin-bottom: 0px;">Wenceslaus D'Silva, CTO (Rooftop)</h4>
 				<p style="margin-top: 8px;">via LinkedIn on 10/10/2023</p>
@@ -48,13 +48,13 @@
 	.endorsments {
 		display: flex;
 		flex-direction: row;
-		/* overflow-x: scroll; */
+
 		padding-bottom: 50px;
 	}
 
 	.endorsment-card {
 		width: 450px;
-		background: rgba(255, 255, 255, 0.17);
+		background: rgba(87, 87, 87, 0.653);
 		border: 1px solid white;
 		margin-right: 30px;
 		flex-shrink: 0;
@@ -66,6 +66,13 @@
 		transform: perspective(400px) rotate3d(var(--i, 1, -1), 0, var(--a));
 		mask: linear-gradient(135deg, #000c 40%, #000, #000c 60%) 100% 100%/240% 240%;
 		transition: 0.4s;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.endorsment-card {
+			width: 70vw;
+			overflow-y: auto;
+		}
 	}
 
 	.endorsment-card:hover {
