@@ -2,7 +2,7 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import star from '$lib/media/star.svg';
 	import noise from '$lib/media/noise.webp';
-	//import { rotate } from '$lib/stores/current_page';
+	import mixpanel from 'mixpanel-browser';
 
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
@@ -26,7 +26,7 @@
 		easing: cubicOut
 	});
 
-	setInterval(() => {}, 1000);
+	mixpanel.init('7a339fa0dc4d0d0a1ba335cc65de716a');
 </script>
 
 <svelte:head>

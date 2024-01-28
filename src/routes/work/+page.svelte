@@ -1,6 +1,13 @@
 <script>
 	import items from '$lib/work.json';
+	import { onMount } from 'svelte';
 	import WorkCard from './WorkCard.svelte';
+
+	import mixpanel from 'mixpanel-browser';
+
+	onMount(() => {
+		mixpanel.track('Work');
+	});
 </script>
 
 <div class="work">
