@@ -80,6 +80,7 @@
 	@media only screen and (max-width: 768px) {
 		.endorsment-card {
 			width: 70vw;
+			height: 60vh;
 			overflow-y: auto;
 		}
 	}

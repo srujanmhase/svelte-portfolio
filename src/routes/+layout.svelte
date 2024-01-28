@@ -158,5 +158,9 @@
 			padding-top: 20px;
 			padding-right: 50px;
 		}
+
+		.pointer {
+			display: none;
+		}
 	}
 </style>

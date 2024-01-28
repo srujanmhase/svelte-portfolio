@@ -26,6 +26,26 @@
 			title = 'Contact | ' + baseTitle;
 			break;
 	}
+
+	let shouldAnimate = true;
+
+	/**
+	 * @param {MediaQueryList} x
+	 */
+	function resetWidth(x) {
+		if (x.matches) {
+			shouldAnimate = false;
+		} else {
+			shouldAnimate = true;
+		}
+	}
+	var x = window.matchMedia('(max-width: 700px)');
+
+	resetWidth(x);
+
+	x.addEventListener('change', function () {
+		resetWidth(x);
+	});
 </script>
 
 <svelte:head>
@@ -37,28 +57,28 @@
 <nav>
 	<a
 		href="/"
-		style="margin-right: {$homePadding}px"
+		style="margin-right: {shouldAnimate ? $homePadding : 0}px"
 		class={$path === currentPage.home ? 'selected' : 'unselected'}
 	>
 		hi, i'm srujan.
 	</a>
 	<a
 		href="/work"
-		style="margin-right: {$workPadding}px"
+		style="margin-right: {shouldAnimate ? $workPadding : 0}px"
 		class={$path === currentPage.work ? 'selected' : 'unselected'}
 	>
 		/work
 	</a>
 	<a
 		href="/endorsments"
-		style="margin-right: {$endorsmentPadding}px"
+		style="margin-right: {shouldAnimate ? $endorsmentPadding : 0}px"
 		class={$path === currentPage.endorsment ? 'selected' : 'unselected'}
 	>
 		/endorsements
 	</a>
 	<a
 		href="/contact"
-		style="margin-right: {$contactPadding}px"
+		style="margin-right: {shouldAnimate ? $contactPadding : 0}px"
 		class={$path === currentPage.contact ? 'selected' : 'unselected'}
 	>
 		/contact
@@ -71,6 +91,7 @@
 		font-weight: 900;
 		font-family: Inter;
 		text-decoration: none;
+		margin-right: 0px;
 	}
 
 	.unselected {
