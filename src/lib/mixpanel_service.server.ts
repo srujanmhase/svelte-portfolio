@@ -1,6 +1,6 @@
 import { PRIVATE_TOKEN } from '$env/static/private';
 
-export function trackEvent(event: string) {
+export async function trackEvent(event: string) {
     const options = {
         method: 'POST',
         headers: { accept: 'text/plain', 'content-type': 'application/json' },
@@ -12,8 +12,9 @@ export function trackEvent(event: string) {
         ])
     };
 
-    fetch('https://api.mixpanel.com/track', options)
+    await fetch('https://api.mixpanel.com/track', options)
         .then(response => {
+
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
