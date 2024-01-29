@@ -1,3 +1,12 @@
+<script>
+	import { trackEvent } from '$lib/mixpanel_service';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		trackEvent('home');
+	});
+</script>
+
 <div class="content">
 	<b>Intro:</b>
 	<span class="paragraph">
