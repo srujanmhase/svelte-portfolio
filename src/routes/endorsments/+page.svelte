@@ -60,6 +60,7 @@
 		flex-shrink: 0;
 		border-radius: 8px;
 		padding: 16px;
+		overflow-y: auto;
 
 		--a: 0.5deg;
 		aspect-ratio: 1;
